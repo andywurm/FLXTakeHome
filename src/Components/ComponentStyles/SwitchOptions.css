@@ -1,0 +1,110 @@
+.unavailableOpt {
+    min-height: 100px;
+    text-align: left;
+    padding-left: 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.propertyOpts {
+    text-align: left;
+    padding: 2% 0 0 10px;
+    /* border: solid red 1px; */
+}
+
+.property {
+    font-size: 1.2em;
+    font-weight: 600;
+    /* border: solid red 1px; */
+}
+
+.propertyOvr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    /* border: solid red 1px; */
+    flex-basis: 50%;
+    margin-top: 10px;
+}
+
+.overviewInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: solid red 1px; */
+}
+
+.perks {
+    /* border: solid red 1px;   */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.perkImgContainer {
+    height: 25px;
+    width: 25px;
+}
+
+.perkImg {
+    height: inherit;
+    width: inherit;
+}
+
+.perkName {
+    margin-left: 3%;
+}
+
+.mapContainer {
+    /* border: solid red 1px; */
+    flex-basis: 30%;
+    height: 200px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.mapImg {
+    border-radius: 10px;
+    height: inherit;
+    width: inherit;
+}
+
+@media only screen and (max-width: 800px) {
+    .perks {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .propertyOvr {
+        height: fit-content;
+        flex-basis: 50%;
+    }
+
+    .mapContainer {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .propertyOvr {
+        height: 50%;
+        flex-basis: 100%;
+        /* border: solid red 1px; */
+    }
+
+    .mapImg,
+    .mapContainer {
+        display: none;
+    }
+
+    .property {
+        margin-top: 10px;
+    }
+
+}

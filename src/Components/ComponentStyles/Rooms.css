@@ -1,0 +1,115 @@
+.roomContainer {
+    background-color: rgb(243, 243, 243);
+    margin-top: 1%;
+    text-align: left;
+    /* border: solid red 1px; */
+}
+
+.insideContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    /* border: solid red 1px; */
+}
+
+.roomCardsContainer {
+    /* border: solid red 1px; */
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 250px));
+    grid-gap: 1rem 1rem;
+}
+
+.roomTitle {
+    margin: 1% 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 5px;
+    /* border: solid red 1px; */
+}
+
+.roomCard {
+    height: fit-content;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid rgb(218, 218, 218) 1px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.roomCard:hover {
+    transform: scale(1.007);
+    border: solid rgb(194, 194, 194) 1px
+}
+
+.roomCardImgContainer {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    /* border: solid red 1px; */
+}
+
+.roomImg {
+    width: 95%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.textIcons {
+    height: 10px;
+    width: 10px;
+}
+
+.roomType {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.roomCardInfo {
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+}
+
+.keepRoomInfo {
+    padding: 0 10px;
+    margin: 10px 0;
+    line-height: 1.3;
+}
+
+.rBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.roomBtn {
+    /* border: solid red 1px; */
+    border: none;
+    width: 95%;
+    padding: 8px 3px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 0 7px 7px 7px;
+    color: white;
+    background-color: rgb(83, 83, 248);
+}
+
+.roomBtn:hover {
+    transform: scale(1.01);
+}
+
+.bools {
+    color: gray;
+    font-size: .9em;
+    margin-top: 1.5%;
+}
+
+@media only screen and (max-width: 950px) {
+    .roomCardsContainer {
+        justify-content: center;
+    }
+}
